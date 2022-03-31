@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220331235518">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220401015429">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,36 +91,33 @@
 						</div>
 					</div>
 					<form action="" class="order__form form-order">
-						<div class="form-order__top">
-							<select name="form[]" class="form-order__select">
-								<option value="1" selected>Выберите тип системы</option>
-								<option value="2">Sed ut perspiciatis</option>
-								<option value="3">Nemo enim ipsam</option>
-								<option value="4">Et harum quidem</option>
-								<option value="5">Temporibus autem</option>
-								<option value="6">Itaque earum rerum</option>
-							</select>
-							<div class="form-order-input">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Ваш e-mail" class="input" />
-							</div>
-							<div class="form-order-input">
-								<input autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input" />
-							</div>
+						<select name="form[]" class="form-order__select">
+							<option value="1" selected>Выберите тип системы</option>
+							<option value="2">Sed ut perspiciatis</option>
+							<option value="3">Nemo enim ipsam</option>
+							<option value="4">Et harum quidem</option>
+							<option value="5">Temporibus autem</option>
+							<option value="6">Itaque earum rerum</option>
+						</select>
+						<div class="form-order-input">
+							<input autocomplete="off" type="text" name="form[email]" placeholder="Ваш e-mail" class="input" />
 						</div>
-						<div class="form-order__middle">
-							<div class="form-order__range range-form">
-								<div class="range-form__top">
-									<div class="range-form__text">Sed ut perspiciatis, unde omnis iste natus</div>
-									<div id="slider-range-value" class="range-form__value">75 %</div>
-								</div>
-								<div id="range" class="range-form__range"></div>
+						<div class="form-order-input">
+							<input autocomplete="off" type="text" name="form[name]" placeholder="Ваше имя" class="input" />
+						</div>
+						<div class="form-order__range range-form">
+							<div class="range-form__top">
+								<div class="range-form__text">Sed ut perspiciatis, unde omnis iste natus</div>
+								<div id="slider-range-value" class="range-form__value">75 %</div>
 							</div>
-							<div class="form-order__file">
-								<input id="file-input" type="file" name="form[file]" class="input input_file" />
-								<label for="file-input">
-									<span>ПРИКРЕПИТЬ ФАЙЛ</span>
-								</label>
-							</div>
+							<div id="range" class="range-form__range"></div>
+							<input autocomplete="off" type="range" name="form[range]" min="0" max="100" value="75" class="input input_range">
+						</div>
+						<div class="form-order__file">
+							<input id="file-input" type="file" name="form[file]" class="input input_file" />
+							<label for="file-input">
+								<span>ПРИКРЕПИТЬ ФАЙЛ</span>
+							</label>
 						</div>
 						<div class="form-order-button">
 							<button type="submit" class="form-order__btn">отправить</button>
@@ -169,7 +166,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220331235518"></script>
+	<script src="js/app.min.js?_v=20220401015429"></script>
 </body>
 
 </html>

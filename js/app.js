@@ -2020,8 +2020,10 @@
                     }
                 });
                 const rangeSliderValueElement = document.getElementById("slider-range-value");
+                const formRangeInput = document.querySelector(".input_range");
                 priceSlider.noUiSlider.on("update", (function(values, handle) {
                     rangeSliderValueElement.innerHTML = values[handle];
+                    if (formRangeInput) formRangeInput.value = Number(values[handle].replace(" %", ""));
                 }));
             }
         }
